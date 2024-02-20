@@ -6,22 +6,19 @@
   <title>Sign In - Icomb Place Hub</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="dark-theme">
   <div class="container">
     <h1>Welcome Back to Icomb Place Hub</h1>
-    <form class="signin-form">
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <button type="submit" class="button-google">Sign In with Google</button>
-      <button type="submit" class="button">Sign In</button>
-    </form>
+    <button class="button-google" onclick="signInWithGoogle()">Sign In with Google</button>
     <a href="signup.html" class="signup-button">Sign Up</a>
   </div>
+
+  <script>
+    function signInWithGoogle() {
+      // Your Google SSO implementation logic goes here
+      // Redirect to the signed-in page after successful authentication
+      window.location.href = "signedin.html";
+    }
+  </script>
 </body>
 </html>

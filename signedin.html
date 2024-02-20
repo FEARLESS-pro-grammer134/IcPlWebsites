@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up - Icomb Place Hub</title>
+  <title>Signed In - Icomb Place Hub</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="dark-theme">
   <div class="container">
-    <h1>Sign Up for Icomb Place Hub</h1>
-    <a href="signin.html" class="signup-button">Sign In</a>
+    <h1>You have successfully signed in to Icomb Place Hub</h1>
   </div>
+  <script>
+    // Redirect to the main page after 3 seconds
+    setTimeout(function() {
+      window.location.href = "main.html";
+    }, 3000);
+  </script>
 </body>
 </html>
