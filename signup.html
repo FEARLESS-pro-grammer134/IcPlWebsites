@@ -9,6 +9,26 @@
 <body class="dark-theme">
   <div class="container">
     <h1>Sign Up for Icomb Place Hub</h1>
+    <!-- Simple form for email, first name, last name, and password -->
+    <form class="signup-form" action="signup_process.php" method="POST">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required>
+      </div>
+      <div class="form-group">
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit" class="button">Sign Up</button>
+    </form>
     <a href="signin.html" class="signup-button">Sign In</a>
   </div>
 </body>
